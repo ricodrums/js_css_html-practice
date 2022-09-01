@@ -1,9 +1,12 @@
 *{
   margin: 0;
+  text-align: center;
 }
+
 body{
   background-color:rgb(219, 174, 59);
 }
+
 main{
   width: 100vw;
   height: 100vh;
@@ -12,9 +15,15 @@ main{
   justify-content: center; 
   align-items: center;
 }
+
 .button-container{
-  padding: 1em;
-  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-block: 2rem;
+  width: 45rem;
+  max-width: 98%;
 }
 
 .button1{
@@ -40,17 +49,51 @@ main{
   background-color: coral;
 }
 
-.principal-container{
-  width: 25%;
-  height: 70%;
-  border-radius: 10px;
+.card{
+  width: 30rem;
+  height:30rem;
+  max-width: 95%;
+  border-radius: 5px;
+  background-color: aliceblue;
+  overflow: hidden;
 }
-.header-container{
+
+.card-header{
   background-color: greenyellow;
   width: 100%;
   height: 3.5em;
+  padding: .5rem 1rem;
 }
-.principal-content{
-  background-color: aliceblue;
-  padding: 1em;
+
+.card-footer {
+  padding: 1rem;
+}
+
+.card-content{
+  padding: .5rem 1rem;
+}
+
+.card-title {
+  color: gray;
+  font-size: xx-large;
+  font-weight: 100;
+  margin-block: 1rem;
+}
+
+.card-description {
+  color: #1f1f1f;
+  font-size: x-large;
+  font-weight: bold;
+  text-align: start;
+  margin-block: 1rem;
+}
+
+.card-button {
+  width: 20rem;
+  max-width: 90%;
+  border-radius: 20px;
+  background: greenyellow;
+  color: white;
+  font-size: medium;
+  padding: .2rem 1rem;
 }
